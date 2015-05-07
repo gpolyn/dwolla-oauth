@@ -62,7 +62,7 @@ class DashboardController < ApplicationController
 	end
 
 	def full
-		redirect_to DwollaVars.Dwolla::OAuth.get_auth_url(DwollaVars.redirect, nil, true)
+		redirect_to DwollaVars.Dwolla::OAuth.get_auth_url(DwollaVars.redirect, 'send|transactions|balance|request|contacts|accountinfofull|funding|scheduled', true)
 	end
 
 	def handle_oauth
