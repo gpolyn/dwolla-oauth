@@ -1,0 +1,28 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">BBVA Compass & Dwolla OAuth</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="<%= 'active' if current_page?(:controller => 'dashboard', :action => 'home')%>">
+          <a href="/">Home </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <div class="navbar-form">
+          <% if logged_in? -%>
+            <a href="#">Signed in as: <span class="label label-primary"><%= "#{session[:name]}" %></span></a>
+            <%= link_to "Log Out", {:action => "logout", :controller => "dashboard"}, :class => "btn btn-danger", :method => :get %>
+          <% end -%>
+        </div>
+      </ul>
+    </div>
+    <!--/.navbar-collapse -->
+  </div>
+</div>
+
+<br />
