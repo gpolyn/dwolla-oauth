@@ -5,7 +5,7 @@
       <%= image_tag "bbva_logo.jpg", height: 100, width: 100, :class => "img-rounded" %>
     </div>
     <div class="col-md-6">
-      <h2>Please OAuth to continue!</h2>
+      <h2><%= logged_in? ? "Welcome!" : "Please OAuth to continue!" %></h2>
     </div>
   </div>
 </div>
