@@ -1,12 +1,7 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
   <div class="row">
-    <div class="col-md-6">
-      <%= image_tag "bbva_logo.jpg", height: 100, width: 100, :class => "img-rounded" %>
-    </div>
-    <div class="col-md-6">
-      <h2><%= logged_in? ? "Welcome!" : "Please OAuth to continue!" %></h2>
-    </div>
+    <h2><%= logged_in? ? "Welcome!" : "Please OAuth to continue!" %></h2>
   </div>
 </div>
 <div class="container">
