@@ -72,6 +72,7 @@ class DashboardController < ApplicationController
 		else
 			# Set access token
 			session[:oauth_token] = DwollaVars.Dwolla::OAuth.get_token(params['code'], DwollaVars.redirect)['access_token']
+      p session[:oauth_token]
 
 			# Set name, for aesthetics.
 			session[:name] = DwollaVars.Dwolla::Users.me(session[:oauth_token])['Name']
