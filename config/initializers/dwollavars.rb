@@ -3,7 +3,7 @@ require 'dwolla'
 module DwollaVars
 	mattr_reader  :Dwolla, :redirect
 	
-	@@redirect ||= "https://dwolla-oauth.herokuapp.com/dashboard/handle_oauth"
+	@@redirect ||= "https://boiling-inlet-73544.herokuapp.com/dashboard/handle_oauth"
 
 	@@Dwolla ||= Dwolla
 	@@Dwolla::api_key ||= "4eQRM9Bd4jJUzz3w0ML+mEXqCtlUrpcLqOvtI7P+74C2ukFC/l"
