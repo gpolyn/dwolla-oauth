@@ -46,3 +46,6 @@ gem 'dwolla-ruby', :git => 'https://github.com/Dwolla/dwolla-ruby.git'
 
 # Need better UX for picking date/time
 gem 'bootstrap-datepicker-rails'
+
+gem 'dwolla_v2'
+gem 'typhoeus'
